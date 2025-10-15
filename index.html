@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon//favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="settings">
+        <ul class="colors">
+          <span class="title">Text colors</span>
+          <li data-txtcolor = "brown"></li>
+          <li data-txtcolor = "black"></li>
+          <li data-txtcolor = "rgb(207,207,207)"></li>
+          <li ><i class="fa-solid fa-plus"></i><input type="color" name="color" /></li>
+        </ul>
+        <ul class="gradients">
+          <span class="title">gradients</span>
+          <li data-bg-color="linear-gradient(120deg, rgb(253, 251, 251) 0%, rgb(235, 237, 238) 100%)"></li>
+          <li data-bg-color="linear-gradient(-225deg, rgb(255, 5, 124) 0%, rgb(124, 100, 213) 48%, rgb(76, 195, 255) 100%)"></li>
+          <li data-bg-color="linear-gradient(120deg, rgb(161, 196, 253) 0%, rgb(194, 233, 251) 100%)"></li>
+          <li data-bg-color="linear-gradient(-225deg, rgb(255, 60, 172) 0%, rgb(86, 43, 124) 52%, rgb(43, 134, 197) 100%)"></li>
+          <li data-bg-color="linear-gradient(to top, rgb(251, 194, 235) 0%, rgb(166, 193, 238) 100%)"></li>
+          <li data-bg-color="linear-gradient(-225deg, rgb(61, 78, 129) 0%, rgb(87, 83, 201) 48%, rgb(110, 127, 243) 100%)"></li>
+          <li data-bg-color="linear-gradient(-225deg, rgb(71, 59, 123) 0%, rgb(53, 132, 167) 51%, rgb(48, 210, 190) 100%)"></li>
+          <li data-bg-color="linear-gradient(-225deg, rgb(35, 21, 87) 0%, rgb(68, 16, 122) 29%, rgb(255, 19, 97) 67%, rgb(255, 248, 0) 100%)"></li>
+        </ul>
+      </div>
+      <button id="toggle-btn"><i class="fa-solid fa-gear"></i></button>
+      <form>
+        <p class="title">To-Do List📃</p>
+        <div class="task-input">
+          <input type="text" name="taskEnter" placeholder="ex: study js" />
+          <input type="button" value="Add"/>
+        </div>
+        <div class="tasks">
+        </div>
+        <span class="error"></span>
+      </form> 
+    </div>
+      <script src="main.js"></script>
+  </body>
+</html>
